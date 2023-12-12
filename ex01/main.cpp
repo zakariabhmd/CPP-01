@@ -2,7 +2,7 @@
 
 int main()
 {
-	Zombie *new_z = zombieHorde(10, "zakaria");
+	Zombie *new_z = zombieHorde(2, "zakaria");
 	int i = 0;
 	while(i < 10)
 	{
