@@ -9,7 +9,7 @@ int	replace(char **av, std::string str)
 	outfile.open((std::string(av[1]) + ".replace").c_str());
 	if (outfile.fail())
 		return (1);
-    int i = 0;
+	int i = 0;
 	while (i < (int)str.size())
 	{
 		pos = str.find(av[2], i);
@@ -20,7 +20,7 @@ int	replace(char **av, std::string str)
 		}
 		else
 			outfile << str[i];
-        i++;
+		i++;
 	}
 	outfile.close();
 	return (0);

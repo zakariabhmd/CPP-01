@@ -2,9 +2,10 @@
 
 int main()
 {
-	Zombie *new_z = zombieHorde(2, "zakaria");
+	int	num = 10;
+	Zombie *new_z = zombieHorde(num, "zakaria");
 	int i = 0;
-	while(i < 10)
+	while(i < num)
 	{
 		new_z[i].announce();
 		i++;
