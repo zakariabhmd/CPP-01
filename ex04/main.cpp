@@ -29,23 +29,23 @@ int	replace(char **av, std::string str)
 int	main(int ac, char **av)
 {
 	char			c;
-	std::ifstream	infile;
+	std::ifstream	nfile;
 	std::string		str;
 
 	if (ac != 4)
 	{
-		std::cout << "usage: replace <file> old_word new_word" << std::endl;
+		std::cout << "ERROR : filename and two strings" << std::endl;
 		return (1);
 	}
-	infile.open(av[1]);
-	if (infile.fail())
+	nfile.open(av[1]);
+	if (nfile.fail())
 	{
 		std::cout << "Error: " << av[1] << ":" << \
-		" no such file or directory" << std::endl;
+		"la youjad file or directory" << std::endl;
 		return (1);
 	}
-	while(!infile.eof() && infile >> std::noskipws >> c)
+	while(!nfile.eof() && nfile >> std::noskipws >> c)
 		str += c;
-	infile.close();
+	nfile.close();
 	return (replace(av, str));
 }

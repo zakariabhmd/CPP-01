@@ -2,7 +2,7 @@
 
 int main()
 {
-	int	num = 10;
+	int	num = 5;
 	Zombie *new_z = zombieHorde(num, "zakaria");
 	int i = 0;
 	while(i < num)
